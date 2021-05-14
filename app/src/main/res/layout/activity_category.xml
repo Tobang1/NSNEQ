@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".Category">
+
+    <Button
+        android:id="@+id/button_easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_centerInParent="true"
+        android:text="EASY" />
+    <Button
+        android:id="@+id/button_hard"
+        android:layout_below="@+id/button_easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_centerInParent="true"
+        android:text="MEDIUM" />
+    <Button
+
+        android:id="@+id/button_My_questions"
+        android:layout_below="@+id/button_hard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:text="HARD" />
+
+</RelativeLayout>
