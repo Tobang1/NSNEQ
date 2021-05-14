@@ -3,6 +3,7 @@ package com.borat.nsneq;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -30,11 +31,24 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button buttonStartQuestion = findViewById(R.id.button_start_exam);
-        buttonStartQuestion.setOnClickListener(v -> startExam());
+        buttonStartQuestion.setOnClickListener((View v) -> {
+            startExam();
+        });
+
+        Button buttonCategory= findViewById(R.id.button_Category);
+        buttonCategory.setOnClickListener((View v) -> {
+            startCategory();
+        });
+
     }
     private void startExam(){
         Intent intent = new Intent(MainActivity.this, ExamActivity.class);
         startActivityForResult(intent,REQUEST_CODE_EXAM );
+    }
+
+    private void startCategory(){
+        Intent intent = new Intent(MainActivity.this, Category.class);
+        startActivity(intent);
     }
 
     @Override
