@@ -14,7 +14,6 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
@@ -130,6 +129,7 @@ public class ExamActivity extends AppCompatActivity {
 
                 timeLeftInMillis = 0;
                 updateCountDownText();
+                checkAnswer();
 
             }
         }.start();
@@ -152,6 +152,8 @@ public class ExamActivity extends AppCompatActivity {
 
     private void checkAnswer(){
         answered = true;
+
+        countDownTimer.cancel();
         RadioButton rbSelected = findViewById(rbGroup.getCheckedRadioButtonId());
         int answerNr = rbGroup.indexOfChild(rbSelected) + 1;
 
@@ -208,5 +210,12 @@ public class ExamActivity extends AppCompatActivity {
             Toast.makeText(this, "Press back again to finish", Toast.LENGTH_SHORT).show();
         }
         backPressedTime = System.currentTimeMillis();
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+        }
     }
 }

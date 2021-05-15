@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/questionbg"
     tools:context=".ExamActivity">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Score: 0"
-        android:textColor="@android:color/black" />
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/text_view_question_count"
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/text_view_score"
         android:text="Question: 0"
-        android:textColor="@android:color/black" />
+        android:textColor="@color/black" />
     <TextView
         android:id="@+id/text_view_highscore"
         android:layout_width="wrap_content"
@@ -76,6 +76,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/radio_group"
         android:layout_marginTop="16dp"
-        android:text="Confirm" />
+        android:background="@android:color/black"
+        android:text="Confirm" >
+
+
+    </Button>
 
 </RelativeLayout>

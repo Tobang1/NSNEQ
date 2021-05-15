@@ -3,65 +3,118 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#030E4C"
+    android:background="@drawable/questionbg"
     android:padding="16dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="326dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="Nigerian School Of Nursing"
-        android:textColor="@color/white"
-        android:textSize="35sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/text_view_highscore"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="53dp"
-        android:text="Entrance examination questions"
-        android:textColor="@color/white"
-        android:textSize="35sp" />
+        android:background="#4A120E8A"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center_horizontal"
+        android:text="@string/description"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/text_view_highscore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/button_start_exam"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:text="Highscore: 0"
         android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/button_start_exam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:layout_centerInParent="true"
-
-        android:text="Start EXAM" />
-    <Button
-        android:id="@+id/button_Category"
-        android:layout_below="@+id/button_start_exam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:layout_centerInParent="true"
-        android:text="CATEGORY" />
-    <Button
-
-        android:id="@+id/button_My_questions"
-        android:layout_below="@+id/button_Category"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="20dp"
-        android:text="MY QUESTIONS" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30sp"
+        android:rowCount="2"
+        android:columnCount="2"
+        >
 
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_start_exam"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="18sp"
+            android:layout_marginTop="250sp"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/my_btn"
+            android:text="START" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_Category"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginLeft="18sp"
+            android:textSize="18sp"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/my_btn"
+            android:layout_marginTop="250sp"
+            android:text="SUBJECTS" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button3"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="200sp"
+            android:background="@drawable/my_btn"
+            android:textSize="18sp"
+            android:text="FAVOURITE" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button4"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="200sp"
+            android:background="@drawable/my_btn"
+            android:layout_marginLeft="18sp"
+            android:textSize="18sp"
+            android:text="ABOUT" />
+    </GridLayout>
+
+    <!--
+        <Button
+            android:id="@+id/button_start_exam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:text="Start EXAM" />
+        <Button
+            android:id="@+id/button_Category"
+            android:layout_below="@+id/button_start_exam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:text="CATEGORY" />
+        <Button
+
+            android:id="@+id/button_My_questions"
+            android:layout_below="@+id/button_Category"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:text="MY QUESTIONS" />
+
+    -->
 </RelativeLayout>
