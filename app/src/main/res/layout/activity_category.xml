@@ -1,35 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_700"
+     android:background="@drawable/questionbg"
     tools:context=".Category">
 
-    <Button
-        android:id="@+id/button_easy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:layout_centerInParent="true"
-        android:text="EASY" />
-    <Button
-        android:id="@+id/button_hard"
-        android:layout_below="@+id/button_easy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:layout_centerInParent="true"
-        android:text="MEDIUM" />
-    <Button
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30sp"
+        android:rowCount="5"
+        android:columnCount="1"
+        >
 
-        android:id="@+id/button_My_questions"
-        android:layout_below="@+id/button_hard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="20dp"
-        android:text="HARD" />
 
-</RelativeLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button1"
+           android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:textSize="18sp"
+            android:layout_marginTop="200sp"
+            android:background="@drawable/category_btn"
+            android:text="English" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="2"
+            android:background="@drawable/category_btn"
+            android:textSize="18sp"
+            android:text="Physics" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button3"
+            android:layout_gravity="fill"
+            android:background="@drawable/category_btn"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="3"
+            android:textSize="18sp"
+            android:text="Biology" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button4"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="4"
+            android:background="@drawable/category_btn"
+            android:textSize="18sp"
+            android:text="Chemistry" />
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button5"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="5"
+            android:textSize="18sp"
+            android:background="@drawable/category_btn"
+            android:layout_marginBottom="100sp"
+            android:text="Button" />
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
