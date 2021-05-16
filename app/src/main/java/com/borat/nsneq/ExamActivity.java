@@ -33,6 +33,7 @@ public class ExamActivity extends AppCompatActivity {
     private TextView textViewQuestion;
     private TextView textViewScore;
     private TextView textViewQuestionCount;
+    private TextView textViewCategory;
     private TextView textViewCountDown;
     private RadioGroup rbGroup;
     private RadioButton rb1;
@@ -64,6 +65,7 @@ public class ExamActivity extends AppCompatActivity {
         textViewQuestion = findViewById(R.id.text_view_question);
         textViewScore = findViewById(R.id.text_view_score);
         textViewQuestionCount = findViewById(R.id.text_view_question_count);
+        textViewCategory = findViewById(R.id.text_view_category);
         textViewCountDown = findViewById(R.id.text_view_countdown);
         rbGroup = findViewById(R.id.radio_group);
         rb1 = findViewById(R.id.radio_button1);
@@ -74,9 +76,17 @@ public class ExamActivity extends AppCompatActivity {
         textColorDefaultRb =rb1.getTextColors();
         getTextColorDefaultCd = textViewCountDown.getTextColors();
 
+
+        Intent intent = getIntent();
+        int categoryID = intent.getIntExtra(MainActivity.EXTRA_CATEGORY_ID, 0);
+        String categoryName = intent.getStringExtra(MainActivity.EXTRA_CATEGORY_NAME);
+
+
+        textViewCategory.setText("Category: " + categoryName);
+
         if (savedInstanceState == null) {
-            ExamDbHelper dbHelper = new ExamDbHelper(this);
-            questionList = dbHelper.getAllQuestions();
+            ExamDbHelper dbHelper = ExamDbHelper.getInstance(this);
+            questionList = dbHelper.getQuestions(categoryID);
             questionCountTotal = questionList.size();
             Collections.shuffle(questionList);
 
