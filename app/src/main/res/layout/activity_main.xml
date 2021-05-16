@@ -45,12 +45,15 @@
 
     <Spinner
         android:id="@+id/spinner_category"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button_start_exam"
+        android:background="@color/purple_700"
         android:layout_below="@+id/button_start_exam"
         android:layout_marginTop="25dp"
-        android:layout_alignLeft="@+id/button_start_exam" />
+        android:popupBackground="@color/purple_700"
+        android:paddingTop="25dp"
+        android:spinnerMode="dropdown"
+        />
 
 
       <Button
