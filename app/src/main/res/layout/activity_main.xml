@@ -31,90 +31,98 @@
         android:text="Highscore: 0"
         android:textSize="20sp" />
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="30sp"
-        android:rowCount="2"
-        android:columnCount="2"
-        >
 
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button_start_exam"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="18sp"
-            android:layout_marginTop="250sp"
-            android:layout_marginBottom="10sp"
-            android:background="@drawable/my_btn"
-            android:text="START" />
+      <Button
+          android:id="@+id/button_start_exam"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="25dp"
+          android:layout_centerInParent="true"
+          android:textColor="@color/black"
+          android:text="Start EXAM" />
 
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button_Category"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginLeft="18sp"
-            android:textSize="18sp"
-            android:layout_marginBottom="10sp"
-            android:background="@drawable/my_btn"
-            android:layout_marginTop="250sp"
-            android:text="SUBJECTS" />
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_start_exam"
+        android:layout_below="@+id/button_start_exam"
+        android:layout_marginTop="25dp"
+        android:layout_alignLeft="@+id/button_start_exam" />
 
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button3"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginBottom="200sp"
-            android:background="@drawable/my_btn"
-            android:textSize="18sp"
-            android:text="FAVOURITE" />
+      <Button
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button4"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginBottom="200sp"
-            android:background="@drawable/my_btn"
-            android:layout_marginLeft="18sp"
-            android:textSize="18sp"
-            android:text="ABOUT" />
-    </GridLayout>
+          android:id="@+id/button_My_questions"
+          android:layout_below="@+id/spinner_category"
+          android:textColor="@color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:textSize="20dp"
+          android:text="MY QUESTIONS" />
+
+
 
     <!--
-        <Button
-            android:id="@+id/button_start_exam"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:layout_centerInParent="true"
-            android:textColor="@color/black"
-            android:text="Start EXAM" />
-        <Button
-            android:id="@+id/button_Category"
-            android:layout_below="@+id/button_start_exam"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:layout_centerInParent="true"
-            android:textColor="@color/black"
-            android:text="CATEGORY" />
-        <Button
+<GridLayout
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:layout_margin="30sp"
+   android:rowCount="2"
+   android:columnCount="2"
+   >
 
-            android:id="@+id/button_My_questions"
-            android:layout_below="@+id/button_Category"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:textSize="20dp"
-            android:text="MY QUESTIONS" />
 
-    -->
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/button_start_exam"
+       android:layout_gravity="fill"
+       android:layout_columnWeight="1"
+       android:layout_rowWeight="1"
+       android:textSize="18sp"
+       android:layout_marginTop="250sp"
+       android:layout_marginBottom="10sp"
+       android:background="@drawable/my_btn"
+       android:text="START" />
+
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/button_Category"
+       android:layout_gravity="fill"
+       android:layout_columnWeight="1"
+       android:layout_rowWeight="1"
+       android:layout_marginLeft="18sp"
+       android:textSize="18sp"
+       android:layout_marginBottom="10sp"
+       android:background="@drawable/my_btn"
+       android:layout_marginTop="250sp"
+       android:text="SUBJECTS" />
+
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/button3"
+       android:layout_gravity="fill"
+       android:layout_columnWeight="1"
+       android:layout_rowWeight="1"
+       android:layout_marginBottom="200sp"
+       android:background="@drawable/my_btn"
+       android:textSize="18sp"
+       android:text="FAVOURITE" />
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/button4"
+       android:layout_gravity="fill"
+       android:layout_columnWeight="1"
+       android:layout_rowWeight="1"
+       android:layout_marginBottom="200sp"
+       android:background="@drawable/my_btn"
+       android:layout_marginLeft="18sp"
+       android:textSize="18sp"
+       android:text="ABOUT" />
+</GridLayout>
+-->
+
+
 </RelativeLayout>
