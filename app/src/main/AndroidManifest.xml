@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NSNEQ"
         tools:ignore="AllowBackup">
-        <activity android:name=".Category"></activity>
+        <activity android:name=".Category" />
         <activity android:name=".ExamActivity" />
         <activity android:name=".SplashScreen">
             <intent-filter>
