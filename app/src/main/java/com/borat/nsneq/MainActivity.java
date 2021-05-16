@@ -35,10 +35,7 @@ public class MainActivity extends AppCompatActivity {
             startExam();
         });
 
-        Button buttonCategory= findViewById(R.id.button_Category);
-        buttonCategory.setOnClickListener((View v) -> {
-            startCategory();
-        });
+
 
     }
     private void startExam(){
@@ -46,10 +43,7 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent,REQUEST_CODE_EXAM );
     }
 
-    private void startCategory(){
-        Intent intent = new Intent(MainActivity.this, Category.class);
-        startActivity(intent);
-    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

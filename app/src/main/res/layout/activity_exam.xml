@@ -22,11 +22,11 @@
         android:text="Question: 0"
         android:textColor="@color/black" />
     <TextView
-        android:id="@+id/text_view_highscore"
+        android:id="@+id/text_view_category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_view_question_count"
-        android:text="HighScore: 0"
+        android:text="Category"
         android:textColor="@android:color/black" />
     <TextView
         android:id="@+id/text_view_countdown"
