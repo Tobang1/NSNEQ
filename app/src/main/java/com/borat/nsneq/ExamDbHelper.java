@@ -302,16 +302,7 @@ public class ExamDbHelper extends SQLiteOpenHelper {
 
 
 
-       /* Question q1 = new Question("Biology: A is correct", "A", "B", "C", "D", 1,Category.BIOLOGY);
-        addQuestion(q1);
-        Question q2 = new Question("Chemistry: B is correct", "A", "B", "C", "D",  2,Category.CHEMISTRY);
-        addQuestion(q2);
-        Question q3 = new Question("Physics: C is correct", "A", "B", "C", "D", 3,Category.PHYSICS);
-        addQuestion(q3);
-        Question q4 = new Question("Biology: A is correct again", "A", "B", "C","D",  1,Category.MATHEMATICS);
-        addQuestion(q4);
-        Question q5 = new Question("English: B is correct again", "A", "B", "C","D",  2,Category.Current_Affairs);
-        addQuestion(q5);*/
+
     }
     private void addQuestion(Question question) {
         ContentValues cv = new ContentValues();
