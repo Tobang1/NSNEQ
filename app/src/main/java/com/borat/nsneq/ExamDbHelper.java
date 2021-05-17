@@ -48,6 +48,7 @@ public class ExamDbHelper extends SQLiteOpenHelper {
                 QuestionsTable.COLUMN_OPTION1 + " TEXT, " +
                 QuestionsTable.COLUMN_OPTION2 + " TEXT, " +
                 QuestionsTable.COLUMN_OPTION3 + " TEXT, " +
+                QuestionsTable.COLUMN_OPTION4 + " TEXT, " +
                 QuestionsTable.COLUMN_ANSWER_NR + " INTEGER, " +
                 QuestionsTable.COLUMN_CATEGORY_ID + " INTEGER, " +
                 "FOREIGN KEY(" + QuestionsTable.COLUMN_CATEGORY_ID + ") REFERENCES " +
@@ -96,16 +97,17 @@ public class ExamDbHelper extends SQLiteOpenHelper {
 
 
     private void fillQuestionsTable() {
-        Question q1 = new Question("Biology: A is correct", "A", "B", "C", 1,Category.BIOLOGY);
+
+       /* Question q1 = new Question("Biology: A is correct", "A", "B", "C", "D", 1,Category.BIOLOGY);
         addQuestion(q1);
-        Question q2 = new Question("Chemistry: B is correct", "A", "B", "C", 2,Category.CHEMISTRY);
+        Question q2 = new Question("Chemistry: B is correct", "A", "B", "C", "D",  2,Category.CHEMISTRY);
         addQuestion(q2);
-        Question q3 = new Question("Physics: C is correct", "A", "B", "C", 3,Category.PHYSICS);
+        Question q3 = new Question("Physics: C is correct", "A", "B", "C", "D", 3,Category.PHYSICS);
         addQuestion(q3);
-        Question q4 = new Question("Biology: A is correct again", "A", "B", "C", 1,Category.MATHEMATICS);
+        Question q4 = new Question("Biology: A is correct again", "A", "B", "C","D",  1,Category.MATHEMATICS);
         addQuestion(q4);
-        Question q5 = new Question("English: B is correct again", "A", "B", "C", 2,Category.Current_Affairs);
-        addQuestion(q5);
+        Question q5 = new Question("English: B is correct again", "A", "B", "C","D",  2,Category.Current_Affairs);
+        addQuestion(q5);*/
     }
     private void addQuestion(Question question) {
         ContentValues cv = new ContentValues();
@@ -113,6 +115,7 @@ public class ExamDbHelper extends SQLiteOpenHelper {
         cv.put(QuestionsTable.COLUMN_OPTION1, question.getOption1());
         cv.put(QuestionsTable.COLUMN_OPTION2, question.getOption2());
         cv.put(QuestionsTable.COLUMN_OPTION3, question.getOption3());
+        cv.put(QuestionsTable.COLUMN_OPTION4, question.getOption4());
         cv.put(QuestionsTable.COLUMN_ANSWER_NR, question.getAnswerNr());
         cv.put(QuestionsTable.COLUMN_CATEGORY_ID, question.getCategoryID());
         db.insert(QuestionsTable.TABLE_NAME, null, cv);
@@ -149,6 +152,7 @@ public class ExamDbHelper extends SQLiteOpenHelper {
                 question.setOption1(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION1)));
                 question.setOption2(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION2)));
                 question.setOption3(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION3)));
+                question.setOption4(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION4)));
                 question.setAnswerNr(c.getInt(c.getColumnIndex(QuestionsTable.COLUMN_ANSWER_NR)));
                 question.setCategoryID(c.getInt(c.getColumnIndex(QuestionsTable.COLUMN_CATEGORY_ID)));
                 questionList.add(question);
@@ -185,6 +189,7 @@ public ArrayList<Question> getQuestions(int categoryID) {
             question.setOption1(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION1)));
             question.setOption2(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION2)));
             question.setOption3(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION3)));
+            question.setOption4(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION4)));
             question.setAnswerNr(c.getInt(c.getColumnIndex(QuestionsTable.COLUMN_ANSWER_NR)));
             question.setCategoryID(c.getInt(c.getColumnIndex(QuestionsTable.COLUMN_CATEGORY_ID)));
             questionList.add(question);
