@@ -111,18 +111,15 @@ public class ExamActivity extends AppCompatActivity {
 
 
 
-        buttonConfirmNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!answered) {
-                    if(rb1.isChecked() || rb2.isChecked() || rb3.isChecked() || rb4.isChecked()){
-                        checkAnswer();
-                    }else {
-                        Toast.makeText(ExamActivity.this, " You Must select an answer", Toast.LENGTH_SHORT).show();
-                    }
-                }else{
-                    showNextQuestion();
+        buttonConfirmNext.setOnClickListener(v -> {
+            if (!answered) {
+                if(rb1.isChecked() || rb2.isChecked() || rb3.isChecked() || rb4.isChecked()){
+                    checkAnswer();
+                }else {
+                    Toast.makeText(ExamActivity.this, " You Must select an answer", Toast.LENGTH_SHORT).show();
                 }
+            }else{
+                showNextQuestion();
             }
         });
     }
@@ -212,22 +209,24 @@ public class ExamActivity extends AppCompatActivity {
         rb4.setTextColor(Color.RED);
 
 
+
+
         switch (currentQuestion.getAnswerNr()) {
             case 1:
                 rb1.setTextColor(Color.GREEN);
-                textViewQuestion.setText("Answer  is correct");
+                textViewQuestion.setText(currentQuestion.getOption1()  );
                 break;
             case 2:
                 rb2.setTextColor(Color.GREEN);
-                textViewQuestion.setText("Answer is correct");
+                textViewQuestion.setText(currentQuestion.getOption2() );
                 break;
             case 3:
                 rb3.setTextColor(Color.GREEN);
-                textViewQuestion.setText("Answer  is correct");
+                textViewQuestion.setText(currentQuestion.getOption3() );
                 break;
             case 4:
                 rb4.setTextColor(Color.GREEN);
-                textViewQuestion.setText("Answer is correct");
+                textViewQuestion.setText(currentQuestion.getOption4()  );
                 break;
         }
         if (questionCounter < questionCountTotal) {
