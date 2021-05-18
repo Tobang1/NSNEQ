@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class Category {
-    public static final int ENGLISH = 1;
+    public static final int SUJECTS = 1;
     public static final int PHYSICS = 2;
     public static final int BIOLOGY =3;
     public static final int CHEMISTRY = 4;

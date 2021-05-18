@@ -75,7 +75,7 @@ public class ExamDbHelper extends SQLiteOpenHelper {
     }
 
     private void fillCategoriesTable() {
-        Category c1 = new Category("English");
+        Category c1 = new Category("SUBJECTS");
         addCategory(c1);
         Category c2 = new Category("Physics");
         addCategory(c2);
@@ -263,35 +263,35 @@ public class ExamDbHelper extends SQLiteOpenHelper {
         addQuestion(q81);
         Question q82 = new Question("Water can be best purified for community drinking by", "A: Chlorination ", "B: sedimentation ", "C: Distillation ","D: filteration ",1 ,Category.BIOLOGY );
         addQuestion(q82);
-        Question q83 = new Question("Iodine deficiency can cause", "A: Anaemia ", "B: Goiter ", "C: Kwashiorkor ","D:obesity ",2, Category.BIOLOGY );
+        Question q83 = new Question("Iodine deficiency can cause", "A: Anaemia ", "B: Goiter ", "C: Kwashiorkor ","D: obesity ",2, Category.BIOLOGY );
         addQuestion(q83);
-        Question q84 = new Question("The organism that gain no benefit but is harmed during the process of association is known as", "A: Parasite ", "B: Host", "C: Symbiont ","D:predator ", 2 ,Category.BIOLOGY);
+        Question q84 = new Question("The organism that gain no benefit but is harmed during the process of association is known as", "A: Parasite ", "B: Host", "C: Symbiont ","D: predator ", 2 ,Category.BIOLOGY);
         addQuestion(q84);
-        Question q85 = new Question("The association in which no harm or inconvinience is caused to one partner though benefit is derived by other one is known as", "A: Parasitism ", "B: predatory ", "C: Commensalism ","D:saprophytism",3, Category.BIOLOGY );
+        Question q85 = new Question("The association in which no harm or inconvinience is caused to one partner though benefit is derived by other one is known as", "A: Parasitism ", "B: predatory ", "C: Commensalism ","D: saprophytism",3, Category.BIOLOGY );
         addQuestion(q85);
-        Question q86 = new Question("A process during which certain gases are exchanged between a living organism and its surrounding environment is known as", "A: Reproduction ", "B: Respiration ", "C: Excretion ","D:nutrition ",2 , Category.BIOLOGY );
+        Question q86 = new Question("A process during which certain gases are exchanged between a living organism and its surrounding environment is known as", "A: Reproduction ", "B: Respiration ", "C: Excretion ","D: nutrition ",2 , Category.BIOLOGY );
         addQuestion(q86);
-        Question q87 = new Question("Semi-digested food ready to leave the stomach is termed", "A: Curd ", "B: Chyle ", "C: Roughage ","D:faeces ",2, Category.BIOLOGY );
+        Question q87 = new Question("Semi-digested food ready to leave the stomach is termed", "A: Curd ", "B: Chyle ", "C: Roughage ","D: faeces ",2, Category.BIOLOGY );
         addQuestion(q87);
         Question q88 = new Question("The human heart is situated in the ", "A: Cranial cavity ", "B: Thoracic cavity ", "C: abdominal cavity ","D: pelvic cavity ", 2 ,Category.BIOLOGY);
         addQuestion(q88);
-        Question q89 = new Question("The main function of the lung is", "A:To ensure proper exchange of gases ", "B: to ensure digestion of food ", "C: To detoxicate food substances ","D:to deaminate ingested protein ",1, Category.BIOLOGY );
+        Question q89 = new Question("The main function of the lung is", "A:To ensure proper exchange of gases ", "B: to ensure digestion of food ", "C: To detoxicate food substances ","D: to deaminate ingested protein ",1, Category.BIOLOGY );
         addQuestion(q89);
         Question q90 = new Question("The function unit of lungs is the", "A: Alveoli ", "B: Trachea ", "C: Bronchiole ","D: artriole ", 1, Category.BIOLOGY);
         addQuestion(q90);
         Question q91 = new Question("Oxygenated blood from the lungs passes into the heart through", "A: pulmonary arteries ", "B: plumonary veins ", "C: Hapatic portal veins ","D: superior vena cava ", 2 ,Category.BIOLOGY);
         addQuestion(q91);
-        Question q92 = new Question("One of these vessels carries deoxygenated blood away from the heart", "A: inferior vena cava ", "B: Supenor vena cava ", "C: Plumonary vein ","D:pulmonary artery ",4 ,Category.BIOLOGY );
+        Question q92 = new Question("One of these vessels carries deoxygenated blood away from the heart", "A: inferior vena cava ", "B: Supenor vena cava ", "C: Plumonary vein ","D: pulmonary artery ",4 ,Category.BIOLOGY );
         addQuestion(q92);
         Question q93 = new Question("Which of the following is made up of striated muscles", "A: Biceps ", "B: Veins ", "C: Artery ","D:stomach ",1 ,Category.BIOLOGY );
         addQuestion(q93);
-        Question q94 = new Question(" Various tissues are found in the body of a man because", "A: ", "B: ", "C: ","D:the cells containd different types of chromosomes ",1, Category.BIOLOGY );
+        Question q94 = new Question(" Various tissues are found in the body of a man because", "A: ", "B: ", "C: ","D: the cells containd different types of chromosomes ",1, Category.BIOLOGY );
         addQuestion(q94);
-        Question q95 = new Question("The inclusion of small quantities of fluorine in the diet of man is essential for the", "A:prevention of cavity and decay formation in the teeth ", "B:utilization of iron in the body ", "C: Regulation of body fluid ","D: regulation of thyroxine secretion",1, Category.BIOLOGY);
+        Question q95 = new Question("The inclusion of small quantities of fluorine in the diet of man is essential for the", "A: prevention of cavity and decay formation in the teeth ", "B: Utilization of iron in the body ", "C: Regulation of body fluid ","D: regulation of thyroxine secretion",1, Category.BIOLOGY);
         addQuestion(q95);
-        Question q96 = new Question("which of the following function of the stomach is concerned with the digestion of starch", "A: Production of hydrochloric acid ", "B: killing of microbes in the starchy food ", "C:Forming of chyme  ","D: Softening of food ", 1 ,Category.BIOLOGY);
+        Question q96 = new Question("which of the following function of the stomach is concerned with the digestion of starch", "A: Production of hydrochloric acid ", "B: killing of microbes in the starchy food ", "C: Forming of chyme  ","D: Softening of food ", 1 ,Category.BIOLOGY);
         addQuestion(q96);
-        Question q97 = new Question("The vein which returns blood from the legs and trunk to the heart is", "A:inferior vena cava ", "B: Superior vena cava", "C: Pulmonary Vein ","D:aorta ",1, Category.BIOLOGY );
+        Question q97 = new Question("The vein which returns blood from the legs and trunk to the heart is", "A:inferior vena cava ", "B: Superior vena cava", "C: Pulmonary Vein ","D: Aorta ",1, Category.BIOLOGY );
         addQuestion(q97);
         Question q98 = new Question("In vertebrate the spinal cord is protected by ", "A: Medullary canal ", "B: Neural canal ", "C: Pelvic cavity ","D: vertebral column ",4, Category.BIOLOGY );
         addQuestion(q98);
@@ -302,16 +302,7 @@ public class ExamDbHelper extends SQLiteOpenHelper {
 
 
 
-       /* Question q1 = new Question("Biology: A is correct", "A", "B", "C", "D", 1,Category.BIOLOGY);
-        addQuestion(q1);
-        Question q2 = new Question("Chemistry: B is correct", "A", "B", "C", "D",  2,Category.CHEMISTRY);
-        addQuestion(q2);
-        Question q3 = new Question("Physics: C is correct", "A", "B", "C", "D", 3,Category.PHYSICS);
-        addQuestion(q3);
-        Question q4 = new Question("Biology: A is correct again", "A", "B", "C","D",  1,Category.MATHEMATICS);
-        addQuestion(q4);
-        Question q5 = new Question("English: B is correct again", "A", "B", "C","D",  2,Category.Current_Affairs);
-        addQuestion(q5);*/
+
     }
     private void addQuestion(Question question) {
         ContentValues cv = new ContentValues();
