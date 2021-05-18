@@ -3,21 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/questionbg"
+    android:background="@drawable/nursing"
     android:padding="16dp"
     tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
 
+    android:background="#8D2196F3">
     <TextView
+        android:id="@+id/head"
         android:layout_width="326dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:background="#4A120E8A"
+        android:background="#74673AB7"
         android:fontFamily="sans-serif-condensed-light"
         android:gravity="center_horizontal"
         android:text="@string/description"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="35sp"
         android:textStyle="bold" />
 
@@ -25,19 +30,22 @@
         android:id="@+id/text_view_highscore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="32dp"
-        android:textColor="@color/black"
+        android:layout_marginTop="35dp"
+        android:background="#773F51B5"
+        android:textColor="@color/white"
         android:text="Highscore: 0"
-        android:textSize="20sp" />
+        android:textSize="25sp" />
 
 
 
-      <Button
+      <androidx.appcompat.widget.AppCompatButton
           android:id="@+id/button_start_exam"
-          android:layout_width="wrap_content"
+          android:layout_width="300dp"
           android:layout_height="wrap_content"
           android:textSize="25dp"
+          android:background="@drawable/white_btn"
           android:layout_centerInParent="true"
           android:textColor="@color/black"
           android:text="Start EXAM" />
@@ -45,28 +53,57 @@
 
     <Spinner
         android:id="@+id/spinner_category"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/purple_700"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/white_btn"
         android:layout_below="@+id/button_start_exam"
-        android:layout_marginTop="25dp"
-        android:popupBackground="@color/purple_700"
-        android:paddingTop="25dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+
+        android:popupBackground="@drawable/skyblue"
         android:spinnerMode="dropdown"
-        />
+        android:gravity="center_horizontal" />
 
 
-      <Button
+      <androidx.appcompat.widget.AppCompatButton
 
           android:id="@+id/button_My_questions"
           android:layout_below="@+id/spinner_category"
           android:textColor="@color/black"
-          android:layout_width="wrap_content"
+          android:layout_width="300dp"
+          android:background="@drawable/white_btn"
+          android:layout_marginTop="8sp"
           android:layout_height="wrap_content"
           android:layout_centerInParent="true"
           android:textSize="20dp"
           android:text="MY QUESTIONS" />
+    <androidx.appcompat.widget.AppCompatButton
 
+        android:id="@+id/button_exam_techniques"
+        android:layout_below="@+id/button_My_questions"
+        android:textColor="@color/black"
+        android:layout_width="300dp"
+        android:background="@drawable/white_btn"
+        android:layout_marginTop="8sp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:text="Exam Techniques"/>
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/button_bibliography"
+        android:layout_below="@+id/button_exam_techniques"
+        android:textColor="@color/black"
+        android:layout_width="300dp"
+        android:background="@drawable/white_btn"
+        android:layout_marginTop="8sp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:text="Bibliography"/>
+
+</RelativeLayout>
 
 
     <!--
