@@ -97,7 +97,7 @@ public class ExamDbHelper extends SQLiteOpenHelper {
 
 
     private void fillQuestionsTable() {
-
+// Biology Questions
         Question q1 = new Question("What chromosomes line up in mitosis", "A: Telophase", "B: Anaphase", "C: Metaphase", "D: Prophase",3, Category.BIOLOGY );
         addQuestion(q1);
         Question q2 = new Question("which cellular organelle contains enzymes that are considered digestive ", "A: Golgi apparatus", "B: Lysosomes", "C: Nucleus", "D: Ribosomes", 2 , Category.BIOLOGY
@@ -199,6 +199,8 @@ public class ExamDbHelper extends SQLiteOpenHelper {
         addQuestion(q49);
         Question q50 = new Question("The amount of water loss from a leaf can be detected using", "A: lime water ", "B: Red litmus paper ", "C: Blue litmus paper ","D: Blue cobalt chloride paper ",4, Category.BIOLOGY );
         addQuestion(q50);
+
+        /*
         Question q51 = new Question("The two types of human tape worm can be distinguished by the presence or absence of", "A: Scolex ", "B: Hook ", "C: Head  ","D: Proglottis ",2, Category.BIOLOGY );
         addQuestion(q51);
         Question q52 = new Question("Accommodation of human eye is best described as the", "A: Ability to see distant objects ", "B: Movement of upper and lower eyelids ", "C: Focusing of near and distant objects ","D: Changing of lens shape due to varying light intemsities ",3, Category.BIOLOGY );
@@ -300,7 +302,7 @@ public class ExamDbHelper extends SQLiteOpenHelper {
         Question q100 = new Question("Transmission and reception of messages within the body of man is the function of", "A: Neurons ", "B: Cardiac muscles ", "C: Skin ","D: Bones ",1 ,Category.BIOLOGY );
         addQuestion(q100);
 
-
+*/
 
 
     }

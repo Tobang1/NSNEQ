@@ -46,7 +46,10 @@ public class MainActivity extends AppCompatActivity {
             startExam();
         });
 
-
+        Button buttonBiblography = findViewById(R.id.button_bibliography);
+        buttonBiblography.setOnClickListener((View v) -> {
+            startBiblography();
+        });
 
     }
     private void startExam(){
@@ -59,6 +62,14 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_CATEGORY_NAME, categoryName);
         startActivityForResult(intent,REQUEST_CODE_EXAM );
     }
+
+    private void startBiblography(){
+        Intent intent = new Intent(MainActivity.this, ScrollingActivity.class);
+        startActivity(intent);
+    }
+
+
+
 
 
 
