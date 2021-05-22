@@ -18,7 +18,7 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#FFEB3B"
-        android:textSize="24sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,7 @@
         android:fontFamily="@font/aclonica"
         android:text="Create New Account"
         android:textColor="#FFFFFF"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -52,7 +52,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:background="#0C0C0C"
+        android:background="#000000"
         android:ems="10"
         android:hint="Full Name"
         android:inputType="textPersonName"
@@ -132,11 +132,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.539" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/RegisterBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:background="@drawable/my_btn"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
@@ -154,6 +155,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:textSize="16dp"
         android:text="Already Registered? Login Here"
         android:textColor="#CDDC39"
         app:layout_constraintEnd_toEndOf="parent"

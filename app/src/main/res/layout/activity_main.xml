@@ -6,7 +6,20 @@
     android:background="@drawable/nursing"
     android:padding="16dp"
     tools:context=".MainActivity">
-<RelativeLayout
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="70dp"
+        android:background="@drawable/my_btn"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:onClick="logout"
+        android:text="Logout" />
+
+    <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
@@ -102,6 +115,7 @@
         android:layout_centerInParent="true"
         android:textSize="20dp"
         android:text="Bibliography"/>
+
 
 </RelativeLayout>
 
