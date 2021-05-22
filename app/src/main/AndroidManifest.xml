@@ -11,11 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NSNEQ"
         tools:ignore="AllowBackup">
+        <activity android:name=".Login"></activity>
+        <activity android:name=".Register">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"
-            android:theme="@style/Theme.NSNEQ.NoActionBar"></activity>
-        <activity android:name=".Bibliography"></activity>
+            android:theme="@style/Theme.NSNEQ.NoActionBar" />
         <activity
             android:name=".ExamActivity"
             android:screenOrientation="portrait" />
@@ -31,6 +38,10 @@
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

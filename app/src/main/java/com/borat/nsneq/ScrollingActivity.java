@@ -1,6 +1,5 @@
 package com.borat.nsneq;
 
-import android.graphics.Color;
 import android.os.Bundle;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
@@ -27,7 +26,6 @@ public class ScrollingActivity extends AppCompatActivity {
 
         Toolbar toolbar = binding.toolbar;
         setSupportActionBar(toolbar);
-        toolbar.setTitleTextColor(Color.RED);
         CollapsingToolbarLayout toolBarLayout = binding.toolbarLayout;
         toolBarLayout.setTitle("BIBLIOGRAPHY");
 
