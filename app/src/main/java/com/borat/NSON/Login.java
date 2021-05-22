@@ -1,4 +1,4 @@
-package com.borat.nsneq;
+package com.borat.NSON;
 
 import androidx.appcompat.app.AppCompatActivity;
 

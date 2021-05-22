@@ -91,7 +91,7 @@
 
 
     <Button
-        android:id="@+id/RegisterBtn"
+        android:id="@+id/LoginBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -116,7 +116,7 @@
         android:textColor="#CDDC39"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RegisterBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/LoginBtn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

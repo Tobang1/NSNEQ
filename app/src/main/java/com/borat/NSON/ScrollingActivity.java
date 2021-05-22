@@ -1,4 +1,4 @@
-package com.borat.nsneq;
+package com.borat.NSON;
 
 import android.os.Bundle;
 
@@ -11,7 +11,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 
-import com.borat.nsneq.databinding.ActivityScrollingBinding;
+import com.borat.NSON.databinding.ActivityScrollingBinding;
 
 public class ScrollingActivity extends AppCompatActivity {
 

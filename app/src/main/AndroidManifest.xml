@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.borat.nsneq">
+    package="com.borat.NSON">
 
     <application
         android:allowBackup="true"
@@ -11,8 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NSNEQ"
         tools:ignore="AllowBackup">
-        <activity android:name=".Login"></activity>
-        <activity android:name=".Register">
+        <activity android:name="com.borat.NSON.Login"></activity>
+        <activity android:name="com.borat.NSON.Register">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,13 +20,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ScrollingActivity"
+            android:name="com.borat.NSON.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/Theme.NSNEQ.NoActionBar" />
         <activity
-            android:name=".ExamActivity"
+            android:name="com.borat.NSON.ExamActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".SplashScreen">
+        <activity android:name="com.borat.NSON.SplashScreen">
             <intent-filter>
                 <action
                     android:name="android.intent.action.MAIN"
@@ -36,7 +36,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.borat.NSON.MainActivity"
             android:screenOrientation="portrait" />
 
         <meta-data

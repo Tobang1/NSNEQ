@@ -1,11 +1,11 @@
- package com.borat.nsneq;
+ package com.borat.NSON;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import com.borat.nsneq.ExamContract.*;
+import com.borat.NSON.ExamContract.*;
 
 import java.util.ArrayList;
 import java.util.List;
