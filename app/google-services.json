@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "936684719032",
+    "project_id": "nson-4ffda",
+    "storage_bucket": "nson-4ffda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936684719032:android:8dd1cfcc6bd445b9ed1d4d",
+        "android_client_info": {
+          "package_name": "com.borat.NSON"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936684719032-cts651pldg9hknvqg7c1ii1j1re9ijs9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVzzU7pKUuYh6lroIk6Wx_Cnel2l0zk8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936684719032-cts651pldg9hknvqg7c1ii1j1re9ijs9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

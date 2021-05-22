@@ -1,4 +1,4 @@
-package com.borat.nsneq;
+package com.borat.NSON;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;

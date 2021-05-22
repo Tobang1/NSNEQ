@@ -1,8 +1,4 @@
-package com.borat.nsneq;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
+package com.borat.NSON;
 
 public class Category {
     public static final int SUJECTS = 1;
