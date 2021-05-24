@@ -14,13 +14,9 @@
         android:theme="@style/Theme.NSNEQ"
         tools:ignore="AllowBackup">
         <activity android:name="com.borat.NSON.Login"></activity>
-        <activity android:name="com.borat.NSON.Register">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name="com.borat.NSON.Register"></activity>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+
         <activity
             android:name="com.borat.NSON.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
