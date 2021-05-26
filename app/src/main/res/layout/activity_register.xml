@@ -10,6 +10,7 @@
 
     <TextView
         android:id="@+id/textView"
+        android:background="#2D3F51B5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/aclonica"
@@ -18,7 +19,7 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#FFEB3B"
-        android:textSize="28sp"
+        android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,8 +47,8 @@
 
     <EditText
         android:id="@+id/fullName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="380dp"
+        android:layout_height="52dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
@@ -68,8 +69,8 @@
 
     <EditText
         android:id="@+id/Email"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="376dp"
+        android:layout_height="51dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
@@ -90,8 +91,8 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="379dp"
+        android:layout_height="53dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
@@ -112,8 +113,8 @@
 
     <EditText
         android:id="@+id/phone"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="378dp"
+        android:layout_height="51dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
@@ -137,11 +138,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:background="@drawable/my_btn"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:background="@drawable/my_btn"
         android:text="Register"
         app:backgroundTint="#F6EEEE"
         app:layout_constraintEnd_toEndOf="parent"

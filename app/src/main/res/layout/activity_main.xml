@@ -118,7 +118,10 @@
         android:text="Bibliography"/>
 
 
+
+
 </RelativeLayout>
+    <include layout="@layout/footer" />
 
 
     <!--

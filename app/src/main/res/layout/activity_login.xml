@@ -9,6 +9,7 @@
 
     <TextView
         android:id="@+id/textView"
+        android:background="#2D3F51B5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/aclonica"
@@ -17,7 +18,7 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#FFEB3B"
-        android:textSize="24sp"
+        android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,6 +29,7 @@
          />
 
 
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -36,7 +38,7 @@
         android:fontFamily="@font/aclonica"
         android:text="Welcome"
         android:textColor="#FFFFFF"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -47,8 +49,8 @@
 
     <EditText
         android:id="@+id/Email"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="372dp"
+        android:layout_height="55dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
@@ -69,8 +71,8 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="376dp"
+        android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
@@ -87,7 +89,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.247" />
+        app:layout_constraintVertical_bias="0.302" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/LoginBtn"
@@ -95,7 +97,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="@drawable/my_btn"
@@ -120,6 +122,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LoginBtn" />
 
+
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
@@ -132,6 +135,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CreateText"
         app:layout_constraintVertical_bias="0.25" />
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
