@@ -10,9 +10,9 @@
 
     <TextView
         android:id="@+id/textView"
-        android:background="#2D3F51B5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#2D3F51B5"
         android:fontFamily="@font/aclonica"
         android:gravity="center_horizontal"
         android:text="Nigeria School Of Nursing Past Questions"
@@ -26,8 +26,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126"
-         />
+        app:layout_constraintVertical_bias="0.060000002" />
 
     <TextView
         android:id="@+id/textView2"
@@ -47,12 +46,13 @@
 
     <EditText
         android:id="@+id/fullName"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
+
         android:layout_height="52dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:background="#000000"
         android:ems="10"
         android:hint="Full Name"
@@ -62,19 +62,20 @@
         android:textColorHint="#F4F4F4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.185" />
+        app:layout_constraintVertical_bias="0.07999998" />
 
     <EditText
         android:id="@+id/Email"
-        android:layout_width="376dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:background="#0C0C0C"
         android:ems="10"
         android:hint="Email"
@@ -87,16 +88,17 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.302" />
+        app:layout_constraintVertical_bias="0.22000003" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="379dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:background="#0C0C0C"
         android:ems="10"
         android:hint="Password"
@@ -109,16 +111,16 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.424" />
+        app:layout_constraintVertical_bias="0.365" />
 
     <EditText
         android:id="@+id/phone"
-        android:layout_width="378dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:background="#0C0C0C"
         android:ems="10"
         android:hint="Phone"
@@ -131,7 +133,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.539" />
+        app:layout_constraintVertical_bias="0.511" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/RegisterBtn"
@@ -139,7 +141,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="@drawable/my_btn"
