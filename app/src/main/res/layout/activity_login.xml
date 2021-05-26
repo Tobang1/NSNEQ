@@ -7,54 +7,52 @@
     android:background="@drawable/skyblue"
     tools:context=".Login">
 
+
     <TextView
         android:id="@+id/textView"
+        android:layout_width="328dp"
+        android:layout_height="99dp"
         android:background="#2D3F51B5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:fontFamily="@font/aclonica"
         android:gravity="center_horizontal"
         android:text="Nigeria School Of Nursing Past Questions"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#FFEB3B"
-        android:textSize="35sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126"
-         />
-
+        app:layout_constraintVertical_bias="0.085" />
 
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/aclonica"
         android:text="Welcome"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints" />
 
-
     <EditText
         android:id="@+id/Email"
-        android:layout_width="372dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:background="#0C0C0C"
         android:ems="10"
         android:hint="Email"
@@ -67,16 +65,17 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.132" />
+        app:layout_constraintVertical_bias="0.19999999" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="376dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:background="#0C0C0C"
         android:ems="10"
         android:hint="Password"
@@ -88,23 +87,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.302" />
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_constraintVertical_bias="0.060000002" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/LoginBtn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_width="221dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:background="@drawable/my_btn"
         android:text="Login"
         app:backgroundTint="#F6EEEE"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
         app:rippleColor="#0E0E0E" />
