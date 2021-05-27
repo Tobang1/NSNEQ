@@ -27,7 +27,7 @@ public class ScrollingActivity extends AppCompatActivity {
         Toolbar toolbar = binding.toolbar;
         setSupportActionBar(toolbar);
         CollapsingToolbarLayout toolBarLayout = binding.toolbarLayout;
-        toolBarLayout.setTitle("BIBLIOGRAPHY");
+        toolBarLayout.setTitle("OUTLINE");
 
 
         FloatingActionButton fab = binding.fab;
