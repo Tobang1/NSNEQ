@@ -52,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
             startBiblography();
         });
 
+        Button buttonContactUs = findViewById(R.id.button_contact_us);
+        buttonContactUs.setOnClickListener((View v) -> {
+            startContactUs();
+        });
+
     }
     private void startExam(){
         Category selectedCategory = (Category) spinnerCategory.getSelectedItem();
@@ -66,6 +71,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void startBiblography(){
         Intent intent = new Intent(MainActivity.this, ScrollingActivity.class);
+        startActivity(intent);
+    }
+    private void startContactUs(){
+        Intent intent = new Intent(MainActivity.this, ContactUs.class);
         startActivity(intent);
     }
 

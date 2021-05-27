@@ -13,11 +13,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
-        android:background="#456200EE"
-        android:textSize="18dp"
-        android:fontFamily="@font/archivo_black"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-medium"
         android:text="@string/large_text"
-        android:textColor="@color/white"
-        />
+        android:textColor="@color/black"
+        android:textSize="18dp" />
 
 </androidx.core.widget.NestedScrollView>
