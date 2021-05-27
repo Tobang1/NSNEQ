@@ -243,7 +243,8 @@ public class ExamDbHelper extends SQLiteOpenHelper {
         addQuestion(q69);
         Question q70 = new Question("A machine has a velocity ration of 5. it requires a 50kg weight to overcome a 200kg weight. The efficiency is", "A: 4%  ", "B: 5%", "C: 40% ", "D: 80% ",4, Category.PHYSICS );
         addQuestion(q70);
-        Question q71 = new Question("If the normal atm pressure in a laboratory supports a column of mercury 0.76m high and the relative density of mecury is 13.8, then the height of water column which amt pressure will support in the same laboratory at the same time is", "A: 0m ", "B: 10m ", "C: 13m ", "D: 18m ",4, Category.PHYSICS );
+        Question q71 = new Question("If the normal atm pressure in a laboratory supports a column of mer" +
+                "cury 0.76m high and the relative density of mecury is 13.8, then the height of water column which amt pressure will support in the same laboratory at the same time is", "A: 0m ", "B: 10m ", "C: 13m ", "D: 18m ",4, Category.PHYSICS );
         addQuestion(q71);
         Question q72 = new Question("An electric current of 3A flowing through an electric heating element of resistance 20 embedded in 1,000g of oil raises the temperature of the oil by 100C in 10s, then the specific heat capacity of oil is", "A: 1.8J/g ", "B: 0.6J/g ", "C: 0.18J/g ", "D: 1.8J/g degree Celsius ",3, Category.PHYSICS );
         addQuestion(q72);

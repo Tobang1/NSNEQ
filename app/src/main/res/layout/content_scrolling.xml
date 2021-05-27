@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ScrollingActivity"
     tools:showIn="@layout/activity_scrolling">
@@ -11,9 +12,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:background="@color/white"
         android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+        android:background="#456200EE"
+        android:textSize="18dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="@string/large_text"
+        android:textColor="@color/white"
+        />
 
 </androidx.core.widget.NestedScrollView>
