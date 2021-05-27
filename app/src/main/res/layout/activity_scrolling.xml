@@ -30,7 +30,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="#3B3F51B5"
+                android:background="@drawable/overview"
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/Theme.NSNEQ.PopupOverlay" />
 

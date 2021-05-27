@@ -4,14 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreen"
-    android:background="?attr/colorSecondaryVariant">
+    android:background="@drawable/bg5">
 
 <ImageView
     android:id="@+id/Splash_logo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerInParent="true"
-    android:src="@drawable/splashscreen"
+    android:src="@drawable/bg5"
     tools:ignore="ContentDescription" />
 
     <include layout="@layout/footer" />

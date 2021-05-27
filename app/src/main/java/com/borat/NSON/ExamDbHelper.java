@@ -75,7 +75,7 @@ public class ExamDbHelper extends SQLiteOpenHelper {
     }
 
     private void fillCategoriesTable() {
-        Category c1 = new Category("SUBJECTS");
+        Category c1 = new Category("SELECT SUBJECT");
         addCategory(c1);
         Category c2 = new Category("Physics");
         addCategory(c2);
