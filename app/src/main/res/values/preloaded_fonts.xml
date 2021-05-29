@@ -3,6 +3,8 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/aclonica</item>
         <item>@font/archivo_black</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/black_ops_one</item>
         <item>@font/signika_light</item>
     </array>
 </resources>

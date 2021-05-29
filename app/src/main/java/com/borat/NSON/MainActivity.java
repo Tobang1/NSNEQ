@@ -48,13 +48,24 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button buttonBiblography = findViewById(R.id.button_bibliography);
-        buttonBiblography.setOnClickListener((View v) -> {
-            startBiblography();
+        buttonBiblography.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivity.this.startBiblography();
+            }
         });
 
         Button buttonContactUs = findViewById(R.id.button_contact_us);
         buttonContactUs.setOnClickListener((View v) -> {
             startContactUs();
+        });
+
+        Button buttonAccount = findViewById(R.id.button_account);
+        buttonAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startAccount();
+            }
         });
 
     }
@@ -76,6 +87,10 @@ public class MainActivity extends AppCompatActivity {
     private void startContactUs(){
         Intent intent = new Intent(MainActivity.this, ContactUs.class);
         startActivity(intent);
+    }
+    private void startAccount(){
+        Intent intent = new Intent(MainActivity.this, account.class);
+             startActivity(intent);
     }
 
 

@@ -51,6 +51,7 @@ public class Register extends AppCompatActivity {
 
 
         fAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
         progressBar = findViewById(R.id.progressBar);
 
         //if registered send user to main activity

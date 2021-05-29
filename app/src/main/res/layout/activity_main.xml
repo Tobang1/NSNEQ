@@ -83,22 +83,11 @@
 
 
 
-    <androidx.appcompat.widget.AppCompatButton
 
-        android:id="@+id/button_exam_techniques"
-        android:layout_below="@+id/button_start_exam"
-        android:textColor="@color/black"
-        android:layout_width="300dp"
-        android:background="@drawable/white_btn"
-        android:layout_marginTop="8sp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="20dp"
-        android:text="How to Use the app"/>
     <androidx.appcompat.widget.AppCompatButton
 
         android:id="@+id/button_bibliography"
-        android:layout_below="@+id/button_exam_techniques"
+        android:layout_below="@+id/button_start_exam"
         android:textColor="@color/black"
         android:layout_width="300dp"
         android:background="@drawable/white_btn"
@@ -119,6 +108,19 @@
             android:layout_centerInParent="true"
             android:textSize="20dp"
             android:text="COnTACT US" />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/button_account"
+            android:layout_below="@+id/button_contact_us"
+            android:textColor="@color/black"
+            android:layout_width="300dp"
+            android:background="@drawable/white_btn"
+            android:layout_marginTop="8sp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:text="ACCOUNT"/>
 
 
 
