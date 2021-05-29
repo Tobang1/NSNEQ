@@ -12,7 +12,7 @@
     <RelativeLayout
         android:id="@+id/conlay"
         android:layout_width="wrap_content"
-        android:layout_height="169dp"
+        android:layout_height="109dp"
         android:background="@drawable/contactus">
 
 
@@ -24,8 +24,8 @@
         android:layout_below="@+id/conlay"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="2dp"
-        android:layout_marginBottom="20dp"
-        android:background="#02FFFFFF">
+        android:layout_marginBottom="60dp"
+        android:background="#956CC4EC">
 
 
         <EditText
@@ -41,8 +41,9 @@
             android:layout_marginTop="50dp"
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
+            android:background="#956CC4EC"
             android:ems="10"
-            android:hint="Full Name"
+            android:hint="  Full Name"
             android:inputType="textPersonName"
             android:textColor="@color/black"
             android:textColorHighlight="#0B27C5"
@@ -51,7 +52,7 @@
         <EditText
             android:id="@+id/contact_email"
             android:layout_width="308dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_below="@+id/contact_name"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
@@ -59,11 +60,12 @@
             android:layout_alignParentRight="true"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
+            android:background="#956CC4EC"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
             android:ems="10"
-            android:hint="Email"
+            android:hint="  Email"
             android:inputType="textEmailAddress"
             android:textAllCaps="false"
             android:textColor="@color/black"
@@ -71,12 +73,13 @@
             android:textColorHint="@color/black" />
 
         <EditText
-            android:id="@+id/message"
+            android:id="@+id/contact_message"
             android:layout_width="304dp"
             android:layout_height="103dp"
             android:layout_below="@+id/contact_email"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
+            android:background="#956CC4EC"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginStart="32dp"
@@ -86,7 +89,7 @@
             android:layout_marginRight="32dp"
             android:ems="10"
             android:gravity="start|top"
-            android:hint="Messages"
+            android:hint="  Messages"
             android:inputType="textMultiLine"
             android:textColor="@color/black"
             android:textColorHighlight="#0A26C1"
@@ -94,10 +97,10 @@
 
         <androidx.appcompat.widget.AppCompatButton
 
-            android:id="@+id/button_bibliography"
+            android:id="@+id/button_submit"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/message"
+            android:layout_below="@+id/contact_message"
             android:layout_centerInParent="true"
             android:layout_marginTop="20sp"
             android:background="@drawable/white_btn"
