@@ -40,6 +40,7 @@
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_baseline_account_box_24" />
 
+
             <TextView
                 android:id="@+id/MFullName"
                 android:layout_width="wrap_content"
@@ -56,16 +57,18 @@
                 android:textSize="25sp" />
 
             <TextView
-
+                android:id="@+id/upload"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/MFullName"
                 android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
                 android:layout_toRightOf="@+id/profile_image"
                 android:fontFamily="@font/berkshire_swash"
                 android:includeFontPadding="false"
-                android:text="user profile"
-                android:textSize="20sp" />
+                android:drawableLeft="@drawable/ic_baseline_cloud_upload_24"
+                android:text="click to upload image"
+                android:textSize="15sp" />
 
         </RelativeLayout>
 
