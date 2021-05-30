@@ -69,6 +69,11 @@ public class Register extends AppCompatActivity {
             String fullName = mFullName.getText().toString();
             String phone = mPhone.getText().toString();
 
+            if(TextUtils.isEmpty(fullName)){
+                mFullName.setError("Name is Required");
+                return;
+            }
+
             if (TextUtils.isEmpty(email)){
                 mEmail.setError("Email is Required. ");
                 return;

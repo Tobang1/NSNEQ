@@ -5,6 +5,9 @@
         <item>@font/archivo_black</item>
         <item>@font/berkshire_swash</item>
         <item>@font/black_ops_one</item>
+        <item>@font/carter_one</item>
+        <item>@font/holtwood_one_sc</item>
         <item>@font/signika_light</item>
+        <item>@font/ultra</item>
     </array>
 </resources>
