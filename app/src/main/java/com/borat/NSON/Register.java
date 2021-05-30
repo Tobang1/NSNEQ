@@ -51,6 +51,7 @@ public class Register extends AppCompatActivity {
 
 
         fAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
         progressBar = findViewById(R.id.progressBar);
 
         //if registered send user to main activity
@@ -67,6 +68,11 @@ public class Register extends AppCompatActivity {
             String password = mPassword.getText().toString().trim();
             String fullName = mFullName.getText().toString();
             String phone = mPhone.getText().toString();
+
+            if(TextUtils.isEmpty(fullName)){
+                mFullName.setError("Name is Required");
+                return;
+            }
 
             if (TextUtils.isEmpty(email)){
                 mEmail.setError("Email is Required. ");
