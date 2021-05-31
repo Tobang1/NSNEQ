@@ -35,5 +35,49 @@
 
 
     </string>
+
+
+    <string name="rules_text">
+        "Mathematics rules\n\n"
+
+        "capital X = Multiply  eg. " 2X2=4" \n"
+
+        "small x is same as x eg.  "2x+3x+4x = 9x" \n"
+
+        "Raised to power is ^  eg "2^2 = 4, 3^2+3^3 = 36".\n\n"
+
+
+        "Note \n\n"
+
+        "All questions are solved and checked correctly.\n\n"
+
+        "We added only 50 questions to each categories because scientifically by study it was discovered that too many questions to solve is boring and time consuming, \n\n"
+       " but if you need us to add more questions you can drop a feed back and we will add more questions. There are thousands of questions for each categories at hand both in the app and in pdf form\n\n"
+
+        "Questions are extracted from the following Nigeria school of nursing past entrance exam questions \n\n"
+
+        "1. SCHOOL OF NURSING, OGBOMOSHO\n"
+        "2. SCHOOL OF NURSING, OSHOGBO\n"
+        "3. ECWA SCHOOL OF NURSING, EGBA\n"
+        "4. ONDO STATE SCHOOL OF NURSING AND MIDWIFERY, AKURE\n"
+        "5. FCT SCHOOL OF NURSING\n"
+        "6. SCHOOL OF NURSING, LAGOS UNIVERSITY TEACHING HOSPITAL (LUTH)\n"
+        "7. SCHOOL OF NURSING, OBAFEMI AWOLOWO UNIVERSITY TEACHING HOSPITAL\n"
+        "8. OYO STATE COLLEGE OF NURSING AND MIDWIFERY\n"
+        "9. SCHOOL OF NURSING, JOINT HOSPITAL, MBANO ETC.\n\n"
+
+
+        "Also   The National Council Licensure Examination (NCLEX-RN® exam) exam past questions application us under development and should be deployed soon. This will be  bonus  %of  to subscribers and we will  guide you through it. \n\n\n"
+
+         "Your feedback will make our work great and good \n\n"
+        " Monthly update will be perform and to keep you all up to date with the current questions \n\n"
+
+        "Wish you success and all the best\n"
+
+       " Thanks."
+
+
+
+    </string>
     <string name="action_settings">Settings</string>
 </resources>

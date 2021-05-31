@@ -7,11 +7,24 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRules"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:background="@drawable/my_btn"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_marginRight="200dp"
+        android:text="RULES"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button2"
         android:layout_width="70dp"
         android:background="@drawable/my_btn"
         android:layout_height="28dp"
+        android:textStyle="bold"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginEnd="4dp"
