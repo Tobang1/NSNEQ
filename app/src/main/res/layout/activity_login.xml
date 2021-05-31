@@ -122,6 +122,24 @@
         app:layout_constraintTop_toBottomOf="@+id/LoginBtn" />
 
 
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Forgot Password?"
+        android:textColor="#E91E63"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginBtn" />
+
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
@@ -132,11 +150,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CreateText"
-        app:layout_constraintVertical_bias="0.25" />
-
-
-
+        app:layout_constraintTop_toBottomOf="@+id/fgtPassword"
+        app:layout_constraintVertical_bias="0.29" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

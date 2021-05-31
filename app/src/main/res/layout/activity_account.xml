@@ -103,10 +103,11 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:fontFamily="@font/aclonica"
-                        android:textColor="@color/black"
                         android:includeFontPadding="false"
                         android:text="OUTLINE"
-                        android:textSize="20sp" />
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/payment_desc"
@@ -148,6 +149,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:fontFamily="@font/aclonica"
+                        android:textStyle="bold"
                         android:textColor="@color/black"
                         android:includeFontPadding="false"
                         android:text="CONTACT"
