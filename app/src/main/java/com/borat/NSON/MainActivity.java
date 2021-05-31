@@ -47,6 +47,14 @@ public class MainActivity extends AppCompatActivity {
             startExam();
         });
 
+        Button buttonRules = findViewById(R.id.buttonRules);
+        buttonRules.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startRules();
+            }
+        });
+
         Button buttonBiblography = findViewById(R.id.button_bibliography);
         buttonBiblography.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,6 +99,10 @@ public class MainActivity extends AppCompatActivity {
     private void startAccount(){
         Intent intent = new Intent(MainActivity.this, account.class);
              startActivity(intent);
+    }
+    private  void startRules(){
+        Intent intent = new Intent(MainActivity.this, Rules.class);
+        startActivity(intent);
     }
 
 
